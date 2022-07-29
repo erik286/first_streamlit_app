@@ -44,8 +44,7 @@ streamlit.text(my_data_rows)
 
 #streamlit.stop()
 
-my_fruits2 = my_cur.execute("Select * from fruit_load_list")
-my_fruits2 = my_fruit_list.set_index('Fruit')
+my_fruits2 = my_data_rows.set_index('Fruit')
 streamlit.multiselect("Pick some fruits:", list(my_fruits2.index))
 
 
