@@ -41,6 +41,10 @@ streamlit.text(my_data_row)
 my_cur.execute("Select * from fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.text("Contains")
-streamlit.text(my_data_row)
+streamlit.text(my_data_rows)
+
+my_fruit_list2 = pandas.read_csv("Select * from fruit_load_list")
+my_fruit_list2 = my_fruit_list.set_index('Fruit')
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list2.index))
 
 
