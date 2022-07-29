@@ -1,6 +1,5 @@
 #requirements.txt
 charset-normalizer~=2.0.0
-cffi==1.15.0 pyarrow==6.0.1 
 snowflake-connector-python
 
 
