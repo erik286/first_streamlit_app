@@ -45,6 +45,6 @@ streamlit.text(my_data_rows)
 #streamlit.stop()
 
 #my_fruits2 = my_data_rows.set_index('Fruit')
-streamlit.multiselect("Pick some fruits:", list(my_data_rows.index))
+streamlit.multiselect("Pick some fruits:", list(my_data_rows))
 
 
