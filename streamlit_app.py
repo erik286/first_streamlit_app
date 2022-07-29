@@ -42,7 +42,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("Contains")
 streamlit.text(my_data_rows)
 
-streamlit.stop()
+#streamlit.stop()
 
 my_fruits2 = my_cur.execute("Select * from fruit_load_list")
 my_fruits2 = my_fruit_list.set_index('Fruit')
