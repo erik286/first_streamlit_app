@@ -38,7 +38,7 @@ streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
 my_cur.execute("Select * from fruit_load_list")
-my_data_row = my_cur.fetchall()
+my_data_rows = my_cur.fetchall()
 streamlit.text("Contains")
 streamlit.text(my_data_rows)
 
