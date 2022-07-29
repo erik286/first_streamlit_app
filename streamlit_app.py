@@ -45,5 +45,5 @@ streamlit.dataframe(my_data_rows)
 
 #streamlit.stop()
 
-my_fruits=streamlit.dataframe(my_data_rows)
+my_fruits=my_data_rows
 streamlit.multiselect("Pick some fruits:", list(my_fruits))
