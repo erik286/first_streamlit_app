@@ -9,6 +9,9 @@ streamlit.text('Omega 3 & Blueberry Oatmeal')
 streamlit.text('Kale, Spinach & Rocket Smoothie')
 streamlit.text('Hard-Boiled Free-Range Egg')
 
+#Section2
+streamlit.stop()
+
 streamlit.title('Your own fruit smoothy')
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
@@ -18,9 +21,10 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # Display the table on the page.
 streamlit.dataframe(my_fruit_list)
 
-streamlit.header("Fruityvice Fruit Advice!")
-
+#Section3
 streamlit.stop()
+
+streamlit.header("Fruityvice Fruit Advice!")
 
 Try:
   fruit_choice=streamlit.text_input('What Fruit?')
@@ -35,6 +39,9 @@ Try:
     streamlit.dataframe(fruityvice_normalized)
 except URLError as e:
   streamlit.error()
+
+#Section4
+streamlit.stop()
 
 import snowflake.connector
 
