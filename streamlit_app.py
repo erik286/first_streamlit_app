@@ -30,7 +30,7 @@ try:
   if not fruit_choice: 
     streamlit.error('What fruit do you want information about')
   else:
-    fruityvice_response = requests.get("https://fruityvice.com/api/fruit"+fruitchoice)
+    fruityvice_response = requests.get("https://fruityvice.com/api/fruit"+fruit_choice)
     # streamlit.text(fruityvice_response.json())
 
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
