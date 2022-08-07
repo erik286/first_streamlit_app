@@ -42,7 +42,7 @@ except URLError as e:
 
 
 #Section4
-streamlit.stop()
+#streamlit.stop()
 
 import snowflake.connector
 
