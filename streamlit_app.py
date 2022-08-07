@@ -53,10 +53,10 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
-my_cur.execute("Select * from fruit_load_list")
+my_cur.execute("Select fruit_name from fruit_load_list")
 my_data_rows = my_cur.fetchall()
 streamlit.text("Contains")
-#streamlit.text(my_data_rows)
+streamlit.text(my_data_rows)
 streamlit.dataframe(my_data_rows)
 
 my_fruits=streamlit.dataframe(my_data_rows)
