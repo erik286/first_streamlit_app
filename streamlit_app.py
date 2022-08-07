@@ -58,6 +58,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("Contains")
 streamlit.text(my_data_rows[1])
 streamlit.dataframe(my_data_rows)
+pandas.normalize(my_data_rows)
 
-my_fruits=streamlit.dataframe(my_data_rows)
+my_fruits=pandas.normalize(my_data_rows)
 streamlit.multiselect("Pick some fruits:", list(my_fruits))
